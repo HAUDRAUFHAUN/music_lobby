@@ -17,11 +17,10 @@ class _TitlesState extends State<Titles> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => SettingsPage()));
+            Navigator.pop(context);
           },
           icon: Icon(
-            Icons.settings,
+            Icons.arrow_back,
             color: Colors.grey[700],
           ),
         ),
