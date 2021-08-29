@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import 'pages/settingspage.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -65,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         elevation: 0.5,
+
       ),
       body: Container(
         // Center is a layout widget. It takes a single child and positions it
