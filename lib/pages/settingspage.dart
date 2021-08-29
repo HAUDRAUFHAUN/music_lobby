@@ -11,7 +11,10 @@ class SettingsPage extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(Icons.settings),
+          icon: Icon(
+            Icons.arrow_back,
+            color: Colors.grey[700],
+          ),
         ),
         centerTitle: true,
         // Here we take the value from the MyHomePage object that was created by
