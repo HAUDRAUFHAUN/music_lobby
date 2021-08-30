@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'pages/settingspage.dart';
-import 'pages/libary.dart';
+import 'pages/library.dart';
 import 'pages/artists/artists.dart';
 
 void main() {
@@ -61,13 +61,13 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           ListTile(
             title: Text(
-              'Libary',
+              'Library',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.00),
             ),
             leading: Icon(Icons.library_music),
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Libary()));
+                  context, MaterialPageRoute(builder: (context) => Library()));
             },
           ),
           ListTile(

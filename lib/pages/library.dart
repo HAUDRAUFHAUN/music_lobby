@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import '../components/audiolist/AudioList.dart';
 
-class Libary extends StatefulWidget {
-  const Libary({Key? key}) : super(key: key);
+class Library extends StatefulWidget {
+  const Library({Key? key}) : super(key: key);
 
   @override
-  _LibaryState createState() => _LibaryState();
+  _LibraryState createState() => _LibraryState();
 }
 
-class _LibaryState extends State<Libary> {
+class _LibraryState extends State<Library> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +24,7 @@ class _LibaryState extends State<Libary> {
         ),
         centerTitle: true,
         title: Text(
-          "Libary",
+          "Library",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         elevation: 0.5,
