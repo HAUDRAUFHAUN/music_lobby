@@ -1,10 +1,11 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'components/audiolist/AudioList.dart';
-
 import 'pages/settingspage.dart';
-import 'pages/titles.dart';
+import 'pages/library.dart';
+import 'pages/artists/artists.dart';
 
 void main() {
   runApp(MyApp());
@@ -60,12 +61,24 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           ListTile(
             title: Text(
-              'Libary',
+              'Library',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.00),
             ),
+            leading: Icon(Icons.library_music),
             onTap: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Titles()));
+                  context, MaterialPageRoute(builder: (context) => Library()));
+            },
+          ),
+          ListTile(
+            title: Text(
+              'Artists',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.00),
+            ),
+            leading: Icon(Icons.group),
+            onTap: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Artists()));
             },
           ),
         ],
