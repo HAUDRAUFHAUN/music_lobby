@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 import '../components/audiolist/AudioList.dart';
 
-import 'settingspage.dart';
-
-class Titles extends StatefulWidget {
-  const Titles({Key? key}) : super(key: key);
+class Libary extends StatefulWidget {
+  const Libary({Key? key}) : super(key: key);
 
   @override
-  _TitlesState createState() => _TitlesState();
+  _LibaryState createState() => _LibaryState();
 }
 
-class _TitlesState extends State<Titles> {
+class _LibaryState extends State<Libary> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
